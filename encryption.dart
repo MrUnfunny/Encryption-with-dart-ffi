@@ -56,18 +56,19 @@ main()
   switch (option) {
     case '1':
     {
-      print("Encrypted Message is:\n $encryptedString\n\n");
+      print("Encrypted Message is:\n$encryptedString\n\n");
       continue;
     }
     case '2':
      {
-      print("Decrypted Message is:\n $decryptedString\n\n");
+      print("Decrypted Message is:\n$decryptedString\n\n");
       continue;
      }
     case '3':
       {
       print("Enter the String");
       msg=stdin.readLineSync();
+      len=msg.length;
       encryptedString=Utf8.fromUtf8(encryption(Utf8.toUtf8(msg),len,generatedKey));
       decryptedString=Utf8.fromUtf8(decryption(Utf8.toUtf8(encryptedString),len,generatedKey));    
       continue;
