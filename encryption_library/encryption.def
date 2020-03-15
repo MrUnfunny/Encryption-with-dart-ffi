@@ -1,0 +1,5 @@
+LIBRARY   encryption
+EXPORTS
+    generateKey
+    encryption
+    decryption
