@@ -8,19 +8,19 @@ For running this on your system, you need to install [dart-sdk](https://dart.dev
 ## Building Native C Library:
 
 CMake is used for building this C Library. Run following commands to build the library.
-'''
+```
 cd Encryption-with-dart-ffi/encryption_library
 cmake .
 make.
-'''
+```
 
 ## Getting Depencies for dart
 
 Pub, the package manager of Dart is used to building all dependencies required by the Dart Program.
 Run following commands to get the required dependencies.
-'''
+```
 cd Encryption-with-dart-ffi
 pub get
-'''
+```
 
 
